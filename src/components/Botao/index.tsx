@@ -1,12 +1,12 @@
 import React from 'react';
 import style from './Botao.module.scss';
 
-
-class Botao extends React.Component{
+//funcao obrigatoria do class component = render
+class Botao extends React.Component<{texto: string}>{
     render(){
         return(
             <button className={style.botao}>
-            Botao
+            {this.props.texto}
             </button>
         )
     }
